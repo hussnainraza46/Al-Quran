@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us </title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm px-3">
+  <div class="container-fluid">
+    <!-- Left Sidebar Trigger -->
+    <button class="btn btn-white burgerBtn border-0">
+      <i class="bi bi-list" style="font-size:1.5rem;"></i>
+    </button>
+
+    <a class="navbar-brand logo ms-2" href="#">Quran.com</a>
+
+    <div class="ms-auto d-flex align-items-center top-icons">
+      <a href="signIn.html" class="btn btn-outline-primary rounded-pill px-3 py-1 me-2">Sign in</a>
+
+      <!-- Language Dropdown -->
+      <div class="dropdown me-2">
+        <button class="btn border-0 bg-white" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-globe" style="font-size:1.2rem;"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">العربية (Arabic)</a></li>
+          <li><a class="dropdown-item" href="#">اردو (Urdu)</a></li>
+          <li><a class="dropdown-item" href="#">Türkçe (Turkish)</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Sidebar Triggers -->
+      <i id="openRightSidebar" class="bi bi-gear" style="font-size:1.4rem; cursor:pointer;"></i>
+      <i id="openSearchSidebar" class="bi bi-search ms-2" style="font-size:1.4rem; cursor:pointer;"></i>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ✅ LEFT Sidebar -->
+<div id="sidebar" class="sidebar bg-white shadow">
+  <div class="sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 side-heading ">MENU</h5>
+    <button class="btn btn-sm btn-close" id="closeSidebar"></button>
+  </div>
+  <ul class="list-unstyled side-menu p-3">
+    <li class=" border-bottom py-2"><i class="bi bi-house-door me-2"></i> Home</li>
+    <li class=" border-bottom py-2"><i class="bi bi-info-circle me-2"></i>Quran Radio</li>
+    <li class=" border-bottom py-2"><i class="bi bi-broadcast me-2"></i>  Reciters</li>
+     <li class=" border-bottom py-2"><i class="bi bi-info-circle me-2"></i>About Us</li>
+    <li class=" border-bottom py-2"><i class="bi bi-shield-lock me-2"></i> Developers</li>
+    
+    <li class=" border-bottom py-2"><i class="bi bi-telephone me-2"></i> Product Updates</li>
+    <li class=" border-bottom py-2"><i class="bi bi-shield-lock me-2"></i> Feedback</li>
+    <li class=" border-bottom py-2"><i class="bi bi-file-text me-2"></i> Help</li>
+  </ul>
+
+  <div class="sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 side-heading ">Our Projects</h5>
+    
+  </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- ✅ SETTINGS Sidebar -->
+<div id="rightSidebar" class="right-sidebar bg-white shadow">
+  <div class="right-sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 fs-6">SETTINGS</h5>
+    <button class="btn btn-sm btn-close" id="closeRightSidebar"></button>
+  </div>
+  <div class="p-3">
+    <p>⚙️ Settings content here...</p>
+    <p>Theme switcher, language, etc.</p>
+  </div>
+</div>
+<div id="rightOverlay"></div>
+
+
+<!-- ✅ SEARCH Sidebar -->
+<div id="searchSidebar" class="right-sidebar bg-white shadow">
+  <div class="right-sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 fs-6">SEARCH</h5>
+    <button class="btn btn-sm btn-close" id="closeSearchSidebar"></button>
+  </div>
+  <div class="p-3">
+    <input type="text" class="form-control mb-3" placeholder="Search Surah, Ayah...">
+    <button class="btn btn-primary w-100">Search</button>
+  </div>
+</div>
+<div id="searchOverlay"></div>
+
+
+
+
+<!-- Search Section -->
+<div class="container px-5 mt-5">
+  <div class="about-container ">
+  <h2 class="fs-4">What is the Quran?</h2>
+  <p>
+    The most conventional answer is that the Quran is a book – but
+     it is not like most books. It is made up of words which contain truth
+      and guidance for every human being, and Muslims believe that
+       these are words revealed directly by God,
+     in the Arabic language, to the last of His prophets and messengers, Muhammad ﷺ (peace be upon him).
+  </p>
+  <p>
+    The Quran presents itself with a number of names and descriptions which are worth reflecting on. Here are just a few:
+  </p>
+  <ul>
+    <li>Quran and Kitab (Recital & Writ): A clean and intuitive reading experience on any device.</li>
+    <li>Kalam Allah (Divine Speech): Access to translations in multiple languages, along with tafsir.</li>
+    <li>Dhikr and Huda (Remembrance & Guidance):  Listen to high-quality recitations from world-renowned Qaris, with the ability to follow along word by word.</li>
+    <li>Him in our hearts and on our tongues. It is also fundamentally a guide for our personal lives and for the life of the community and society.</li>
+  </ul>
+  <p>
+   The Quran is the final revealed message which complements and completes earlier revealed scriptures, just as the Prophet Muhammad ﷺ taught the same essential message as the many prophets before him, including Adam, Noah, Moses, Abraham, and Jesus (peace be upon them all). The Quran clarifies what humanity needs to know from now until the Day of Judgment, 
+   and it will remain preserved from loss and distortion which affected previous scriptures in various ways.
+  </p>
+
+  
+
+  <div class=" about-box">
+    <p class="fs-2">كِتَٰبٌ
+      أَنزَلۡنَٰهُ
+      إِلَيۡكَ
+      مُبَٰرَكٞ
+      لِّيَدَّبَّرُوٓاْ
+      ءَايَٰتِهِۦ
+      وَلِيَتَذَكَّرَ
+      أُوْلُواْ
+      ٱلۡأَلۡبَٰبِ
+      ٢٩
+    </p>
+    <p class="fs-5">"˹This is˺ a blessed Book which We have revealed to you ˹O Prophet˺ so that they may contemplate its verses, 
+      and people of reason may be mindful."<a href="#"> Sad 38:29</a></p>
+  </div>
+  <p class="mt-3 fs-6">We welcome you to Quran.com and invite you to read and listen to
+     the Quran with an open heart, to deeply contemplate its verses, 
+     sincerely seek the knowledge contained within it, and to learn 
+     more using the resources on our site. We hope you will find Quran.com beneficial
+    and pray that the message of the Quran will enrich your life's journey.</p>
+
+    <h2 class="fs-4">What are some major themes in the Quran?</h2>
+    <label for="">There are many themes and ideas explored in the Quran, but the major ones include:</label>
+    <ul>
+    <li>Quran and Kitab (Recital & Writ): A clean and intuitive reading experience on any device.</li>
+    <li>Kalam Allah (Divine Speech): Access to translations in multiple languages, along with tafsir.</li>
+    <li>Dhikr and Huda (Remembrance & Guidance):  Listen to high-quality recitations from world-renowned Qaris, with the ability to follow along word by word.</li>
+    <li>Him in our hearts and on our tongues. It is also fundamentally a guide for our personal lives and for the life of the community and society.</li>
+  </ul>
+
+  <h2 class="fs-4">Can the Quran be translated?</h2>
+  <p>The global Muslim population is vast and diverse,
+     reflecting the richness of the Islamic faith and its
+      adaptability to different cultural contexts. Muslims
+       come from different ethnicities, cultures, and languages,
+        and are spread across every continent in the world. 
+        It is estimated that there are around 2 billion Muslims
+         worldwide. The majority of Muslims live in Asia, with 
+         Indonesia being the country with the highest number of 
+         Muslims, followed by Pakistan, India, and Bangladesh.
+          However, there are also significant Muslim populations 
+    in Africa, the Middle East, Europe, and North America.</p>
+    <p>
+      The Quran has been translated into over 100 different languages,
+       and each translation can be considered its own interpretation of the original Arabic text. It is important to note, however, that the Quran is the word of God and is therefore sacred and unchangeable. As such, translations of the Quran are intended to convey the meaning of the original Arabic text as accurately as possible, 
+      but they may differ in their interpretation of certain passages.
+    </p>
+
+    <h2 class="fs-4">I have never read the Quran before. Do you have any suggestions on where I can start?</h2>
+
+    <p>
+       <i>Approach the Quran with an open mind and a willingness to learn:</i> It is important to approach the Quran with a positive attitude and a desire to understand its message. Try to put aside any preconceived notions or biases you may have, and approach the Quran with an open mind.
+    </p>
+
+
+
+  <!-- ✅ Center Image -->
+  <div class="about-image justify-content-center py-3 d-flex align-items-center">
+    <img class="w" src="images/lokalize.png" alt="Quran.com Team">
+  </div>
+</div>
+</div>
+
+
+
+
+<footer class="bg-light text-dark pt-5 pb-3 border-top">
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="row mb-4 column-gap-3">
+      <!-- Col 1 -->
+      <div class="col-md-6 mb-3 width-footer">
+        <h5 class="fw-bold">Quran.com</h5>
+        <h6>Read, Listen, Search, and Reflect on the Quran</h6>
+        <p class=" para-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+          Sed vitae lacus sed ipsum tempor facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+          Sed vitae lacus sed ipsum tempor facilisis.</p>
+        <p class="para-footer">Aliquam erat volutpat. Integer vel ante sed nisi tincidunt dapibus vel 
+          a nunc. Aliquam erat volutpat. Integer vel ante sed nisi tincidunt dapibus vel 
+          a nunc. Aliquam erat volutpat. Integer vel ante sed nisi tincidunt dapibus vel 
+          a nunc</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-bold">Navigate</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Home</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Quran Radio</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Reciters</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">About Us</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Developers</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Product Updates</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Feedback</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Help</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-bold">Our Projects</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Quran.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Quran For</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Android</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Quran iOS</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">QuranReflect.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Sunnah.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Nuqayah.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Legacy.Quran.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Corpus.Quran.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-bold">Popular Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Ayatul Kursi</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Yaseen</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Al Mulk</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Ar-Rahman</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Al Waqi'ah</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Al Kahf</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Row 2 -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <!-- Left -->
+      <div class="mb-2">
+        <a href="#" class="me-3 priva-terms text-decoration-none text-dark">Privacy Policy</a>
+        <a href="#" class="me-3 priva-terms text-decoration-none text-dark">Terms & Conditions</a>
+        <p class="mb-0 copyRight ">©2025 Quran.com — All rights reserved.</p>
+      </div>
+
+      <!-- Right -->
+      <div class="d-flex gap-2">
+        <!-- Mode Dropdown -->
+        <div class="dropdown">
+          <button id="modeBtn" class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" 
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-circle-half me-1"></i> Auto
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="modeBtn">
+            <li><a class="dropdown-item mode-option" href="#" data-mode="Auto"><i class="bi bi-circle-half me-2"></i>Auto</a></li>
+            <li><a class="dropdown-item mode-option" href="#" data-mode="Light"><i class="bi bi-brightness-high me-2"></i>Light</a></li>
+            <li><a class="dropdown-item mode-option" href="#" data-mode="Dark"><i class="bi bi-moon-stars me-2"></i>Dark</a></li>
+          </ul>
+        </div>
+
+        <!-- Language Dropdown -->
+        <!-- Language Dropdown -->
+        <div class="dropdown">
+          <button id="langBtn" class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" 
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-globe me-1"></i> English
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langBtn">
+            <li><a class="dropdown-item lang-option" href="#" data-lang="English"><i class="bi bi-flag me-2"></i>English</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="العربية"><i class="bi bi-flag me-2"></i>العربية</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="اردو"><i class="bi bi-flag me-2"></i>اردو</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="Türkçe"><i class="bi bi-flag me-2"></i>Türkçe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

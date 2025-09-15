@@ -1,0 +1,588 @@
+    /* For mode change only */
+    /* Default (Auto) Mode */
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Figtree", sans-serif;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+footer.light-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+footer.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+    
+    
+    
+    
+    
+    /*Header and hero section */
+    
+    .search-box {
+      max-width: 600px;
+      margin: auto;
+    }
+    .search-input {
+      border-radius: 50px;
+      padding-left: 2.5rem;
+      padding: 13px 41px;
+    }
+    .search-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6c757d;
+    }
+    .btn-pill {
+      border-radius: 50px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 5px;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .top-icons i {
+      font-size: 1.2rem;
+      margin: 0 8px;
+      cursor: pointer;
+    }
+    .burgerBtn{
+        
+        border-radius: 50%;
+    }
+    
+    .burgerBtn:hover{
+        background-color: #dbdbdb;
+        border-radius: 50%;
+    }
+
+    .bg-image{
+      position: relative;
+      background-image: url(../images/Al\ Quran\ Islamic\ Calligraphy\ Writing\ Al-quran\ Karim\ Vector\ PNG\ Images\ _\ AI\ Free\ Download\ -\ Pikbest.jpeg);
+      background-position: center;
+          background-repeat: no-repeat;
+          
+      object-fit: fill;
+    
+    }
+   
+    /*  serch bar option expand */
+    .search-box {
+  max-width: 500px;
+  width: 100%;
+}
+.search-input {
+  transition: all 0.3s ease-in-out;
+  padding-left: 2.2rem; /* space for search icon */
+}
+.search-options {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.search-box.active .search-options {
+  display: block;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: #888;
+  pointer-events: none;
+}
+.search-options{
+  border-bottom-left-radius: 24px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.search-options label{
+  font-size: 14px;
+  color: #919191;
+}
+.search-options button{
+  padding: 6px;
+}
+.dropdown-item i{
+  margin-right: 10px;
+}
+.search-options .dropdown-item {
+  font-size: 16px;
+}
+
+
+
+    /* Side bar style start */
+/* Sidebar Styles */
+/* LEFT Sidebar */
+/* LEFT Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -340px;
+  width: 340px;
+  height: 100%;
+  background: #fff;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  z-index: 1050;
+}
+.sidebar.open { left: 0; }
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  
+  z-index: 1040;
+}
+#overlay.active { display: block; }
+
+.side-heading{
+  font-size: 14px;
+}
+.side-menu li a{
+  color: #1c1c1c;
+  text-decoration: none;
+}
+.side-menu li i{
+  color: #c7c7c7;
+  
+}
+.side-menu li:hover i{
+  color: #1c1c1c;
+}
+
+/* RIGHT Sidebar (Settings + Search same style) */
+.right-sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  z-index: 1050;
+}
+.right-sidebar.open { right: 0; }
+#rightOverlay, #searchOverlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1040;
+}
+#rightOverlay.active, #searchOverlay.active { display: block; }
+    
+    /*Continue Reading Section*/
+    
+    .card-custom {
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: none;
+      padding: 20px;
+      transition: 0.2s ease;
+    }
+    .card-custom:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .verse-label {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    .link-custom {
+      text-decoration: none;
+      font-weight: 500;
+      color: #000;
+    }
+    .link-custom:hover {
+      text-decoration: underline;
+      color: #008080;
+    }
+    .myquran-link {
+      font-weight: 500;
+      text-decoration: none;
+      color: #000;
+    }
+    .myquran-link:hover {
+      text-decoration: underline;
+      color: #008080;
+    }
+
+/*Explore more section*/
+
+        .topic-btn {
+      border-radius: 50px;
+      padding: 8px 16px;
+      font-weight: 500;
+      margin: 5px;
+    }
+    .topic-btn.active {
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      color: #000;
+    }
+    .topic-btn.inactive {
+      background-color: #f1f3f5;
+      color: #000;
+    }
+    .card-custom {
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: none;
+      padding: 20px;
+      transition: 0.2s ease;
+    }
+    .card-custom:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .quran-arabic {
+      font-family: 'Scheherazade New', serif;
+      font-size: 28px;
+      text-align: right;
+    }
+    .reading-link {
+      font-weight: 500;
+      text-decoration: none;
+      color: #000;
+    }
+    .reading-link:hover {
+      text-decoration: underline;
+      color: #008080;
+    }
+    .calendar-link {
+      text-decoration: none;
+      font-weight: 500;
+      color: #000;
+    }
+    .calendar-link:hover {
+      text-decoration: underline;
+      color: #008080;
+    }
+    .engTrans{
+        font-size: 19px;
+    }
+
+    /* Carrousel Section  */
+    .text-primary{
+      color: #6c757d !important;
+    }
+    .text-primary:hover{
+      color: #42474b !important;
+    }
+    .carousel-wrapper {
+    scroll-behavior: smooth;
+    scrollbar-color: #cacaca #f1f1f1;
+    scrollbar-width: thin;
+  }
+
+  .carousel-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  .carousel-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  .carousel-wrapper::-webkit-scrollbar-thumb {
+    background: #b4b4b4;
+    border-radius: 10px;
+  }
+
+  .card-custom-carousel{
+    width: 450px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .card-custom img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .image-learning{
+    width: 100px;
+  }
+.start-lear a{
+  font-size: 16px;
+}
+
+
+/* tabs surah juz Revelation Section  */
+
+.act-link{
+  color: #000;
+}
+
+.sur-juz.active {
+  border-bottom: 1px solid #3f3f3f !important;
+}
+.sur-juz .act-link{
+  color: #121212;
+}
+
+.btn-success{
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Surah card styling */
+    .surah-card {
+      border: 1px solid #eef0f2;
+      border-radius: 10px;
+      padding: 18px;
+      transition: all .25s ease;
+      display:flex;
+      align-items:center;
+      gap: 16px;
+      background: #fff;
+      min-height: 92px;
+    }
+    .surah-card:hover {
+      box-shadow: 0 6px 18px rgba(8,24,48,0.06);
+      border-color: rgba(13,110,253,0.12);
+    }
+
+    .surah-number {
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      background:#f3f5f6;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#111;
+      flex-shrink:0;
+      transition: all .25s ease;
+    }
+    .surah-card:hover .surah-number {
+      background: #0d9488; /* bootstrap primary */
+      color: #fff;
+    }
+
+    .surah-meta { flex:1; min-width:0; }
+    .surah-title { font-size:1.05rem; font-weight:700; margin:0; color:#1f2937; transition:color .25s; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+    .surah-translation { margin:4px 0 0 0; color:#6b7280; font-size:13px; transition:color .25s; }
+    .surah-ayahs { color:#464646; font-weight:700; font-size:0.95rem; margin-bottom: 0 !important; }
+
+    .surah-card:hover ,
+    .surah-card:hover .surah-translation,
+    .surah-card:hover .surah-ayahs:hover {
+      color: #0d9488;
+      
+    }
+    .surah-card:hover{
+      border: 1px solid #0d9488;
+    }
+
+    .surah-arabic { font-family: "Scheherazade New", serif; font-size:1.05rem; text-align:right; color:#111; flex-shrink:0; min-width:80px; }
+
+    /* Responsive tweaks */
+    @media (max-width: 767px) {
+      .surah-arabic { display:none; }
+    }
+
+    /* small helper */
+    .small-muted { color:#6b7280; font-size:0.9rem; }
+
+    /* container spacing */
+    .page-container { max-width:1100px; margin:28px auto; padding:0 16px; }
+
+
+
+    /* surah Page style start  */
+    .nav-border{
+      padding: 6px 8px;
+      border: 1px solid #f3f3f3;
+      background-color: #f1f1f1;
+      
+      
+    }
+     .nav-border .nav-boder-item .nav-link{
+      color: #000000;
+      padding: 9px 27px;
+     
+    }
+    .nav-boder-item .nav-link i{
+      margin-right: 5px;
+    }
+    .nav-border .nav-boder-item .nav-link:focus-visible{
+      outline: none;
+      background-color: #fff;
+     
+    }
+    .nav-border .nav-boder-item .nav-link.active{
+      border: 1px solid #ffffff;
+      background-color: #fff;
+      border-radius: 50px !important;
+    }
+
+    .btn-outline-prim  {
+      border: 1px solid #c6c6c6;
+      color: #5d5d5d;
+    }
+    .btn-outline-prim:hover {
+      border: 1px solid #3f3f3f;
+      color: #000000;
+      background-color: #fff;
+    }
+    .ayah-block{
+      padding: 36px;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 28px;
+    text-align: center;
+    }
+
+    .ayah-block .badge{
+      border-radius: 50px;
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #cccccc !important;
+    font-size: 14px;
+    }
+
+
+
+
+.quran-arabic {
+  
+  font-size: 25px;
+  line-height: 2;
+}
+
+.translation {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.ayah-block {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+/* Translation tab */
+#translationContent .ayah-block {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Reading tab */
+#readingContent {
+  max-width: 500px;
+  margin: 0 auto;         /* center horizontally */
+  text-align: center;     /* center text */
+}
+
+#readingContent p {
+  line-height: 2.2;
+  font-size: 1.4rem;
+  font-family: "Scheherazade New", "Amiri", serif;
+}
+.quran-arabic .badge{
+  border: 1px solid #c5c5c5;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+    /* surah Page style end  */
+
+/* about The Quran Conten Page */
+    .about-box{
+      background-color: #f8f8f8;
+      border-left: 4px solid #0d9488;
+      padding: 50px 100px;
+      text-align: center;
+
+    }
+    .about-box p{
+      font-family: "Figtree", sans-serif;
+    }
+    .about-box p a{
+      color: #008080;
+    }
+/* Calendar Page style */
+
+.accordion-flush{
+  border: 1px solid #d4d4d4;
+    padding: 20px 30px;
+    border-radius: 12px;
+}
+
+.accordion-button .bi-question-circle{
+  margin-right: 10px;
+}
+.accordion-button{
+  font-size: 25px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+.accordion-body{
+  background-color: #f3f3f3;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  font-size: 22px;
+  text-align: left;
+}
+.accordion-button:focus {
+  border-color: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #fff !important;
+}
+
+
+
+
+
+  /* Footer Section Start  */
+  .width-footer{
+    width: 480px !important;
+    margin-right: 40px;
+  }
+
+  .list-unstyled li{
+    padding-top: 6px;
+  }
+
+  .copyRight{
+    font-size: 12px;
+  }
+
+  .priva-terms{
+    font-size: 14px;
+  }
+
+
+  .para-footer {
+    font-size: 14px;
+  }
+    /* Footer Section End  */

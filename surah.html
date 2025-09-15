@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surah Detail</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm px-3">
+  <div class="container-fluid">
+    <!-- Left Sidebar Trigger -->
+    <button class="btn btn-white burgerBtn border-0">
+      <i class="bi bi-list" style="font-size:1.5rem;"></i>
+    </button>
+
+    <a class="navbar-brand logo ms-2" href="home.html">Quran.com</a>
+
+    <div class="ms-auto d-flex align-items-center top-icons">
+      <a href="signup-account.html" class="btn btn-outline-primary rounded-pill px-3 py-1 me-2">Sign in</a>
+
+      <!-- Language Dropdown -->
+      <div class="dropdown me-2">
+        <button class="btn border-0 bg-white" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-globe" style="font-size:1.2rem;"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">العربية (Arabic)</a></li>
+          <li><a class="dropdown-item" href="#">اردو (Urdu)</a></li>
+          <li><a class="dropdown-item" href="#">Türkçe (Turkish)</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Sidebar Triggers -->
+      <i id="openRightSidebar" class="bi bi-gear" style="font-size:1.4rem; cursor:pointer;"></i>
+      <i id="openSearchSidebar" class="bi bi-search ms-2" style="font-size:1.4rem; cursor:pointer;"></i>
+    </div>
+  </div>
+  </nav>
+<!-- ✅ LEFT Sidebar -->
+<div id="sidebar" class="sidebar bg-white shadow">
+  <div class="sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 side-heading ">MENU</h5>
+    <button class="btn btn-sm btn-close" id="closeSidebar"></button>
+  </div>
+  <ul class="list-unstyled side-menu p-3">
+    <li class=" border-bottom py-2"><i class="bi bi-house-door me-2"></i> Home</li>
+    <li class=" border-bottom py-2"><i class="bi bi-info-circle me-2"></i>Quran Radio</li>
+    <li class=" border-bottom py-2"><i class="bi bi-broadcast me-2"></i>  Reciters</li>
+    <li class=" border-bottom py-2"><a href="About-us.html" ><i class="bi bi-info-circle me-2"></i>About Us</a></li>
+    <li class=" border-bottom py-2"><i class="bi bi-shield-lock me-2"></i> Developers</li>
+    
+    <li class=" border-bottom py-2"><i class="bi bi-telephone me-2"></i> Product Updates</li>
+    <li class=" border-bottom py-2"><i class="bi bi-shield-lock me-2"></i> Feedback</li>
+    <li class=" border-bottom py-2"><i class="bi bi-file-text me-2"></i> Help</li>
+  </ul>
+
+  <div class="sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 side-heading ">Our Projects</h5>
+    
+  </div>
+</div>
+<div id="overlay"></div>
+
+
+
+<!-- ✅ SETTINGS Sidebar -->
+<div id="rightSidebar" class="right-sidebar bg-white shadow">
+  <div class="right-sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 fs-6">SETTINGS</h5>
+    <button class="btn btn-sm btn-close" id="closeRightSidebar"></button>
+  </div>
+  <div class="p-3">
+    <p>⚙️ Settings content here...</p>
+    <p>Theme switcher, language, etc.</p>
+  </div>
+</div>
+<div id="rightOverlay"></div>
+
+
+<!-- ✅ SEARCH Sidebar -->
+<div id="searchSidebar" class="right-sidebar bg-white shadow">
+  <div class="right-sidebar-header d-flex justify-content-between align-items-center p-3 border-bottom">
+    <h5 class="mb-0 fs-6">SEARCH</h5>
+    <button class="btn btn-sm btn-close" id="closeSearchSidebar"></button>
+  </div>
+  <div class="p-3">
+    <input type="text" class="form-control mb-3" placeholder="Search Surah, Ayah...">
+    <button class="btn btn-primary w-100">Search</button>
+  </div>
+</div>
+<div id="searchOverlay"></div>
+
+
+
+
+  <div class="container py-4">
+
+    <!-- Surah Header -->
+    <div class="surah-header d-flex justify-content-between">
+      <h3 id="surahTitle" class="fw-normal fs-5"></h3>
+      <div>
+        <a href="#" id="surahInfo" class="me-3 text-decoration-none text-dark"><i class="bi bi-info-circle-fill"></i> Surah Info</a>
+        <a href="#" id="playAudio" class="text-decoration-none text-dark"><i class="bi bi-play-fill"></i> Play Audio</a>
+      </div>
+    </div>
+    <p class="small text-muted mb-2">
+          Translation by <strong>Dr. Mustafa Khattab, The Clear Quran</strong>
+          <a href="#" class="ms-2">(Change)</a>
+          <div id="pageIndicator" class="text-center fw-bold my-3"></div>
+
+        </p>
+    <!-- Tabs -->
+     <div class="mt-5 justify-content-center d-flex">
+        <ul class="nav nav-tabs mb-3 nav-border rounded-pill ">
+          <li class="nav-item nav-boder-item rounded-pill"><a class="nav-link active" data-bs-toggle="tab" href="#translation"><i class="bi bi-book-fill"></i>Translation</a></li>
+          <li class="nav-item nav-boder-item rounded-pill"><a class="nav-link" data-bs-toggle="tab" href="#reading"><i class="bi bi-file-text-fill"></i>Reading</a></li>
+        </ul>
+     </div>
+    
+
+    <div class="tab-content">
+  <div class="tab-pane fade show active" id="translation">
+    <div id="translationContent"></div>
+    <!-- Surah name in Arabic (translation tab ke niche) -->
+    <h4 id="surahNameArTranslation" class="text-center mt-4 fw-bold"></h4>
+  </div>
+
+  <div class="tab-pane fade" id="reading">
+    <div id="readingContent" class="quran-arabic">
+      
+    </div>
+    <!-- Surah name in Arabic (reading tab ke niche) -->
+    <h4 id="surahNameArReading" class="text-center mt-4 fw-bold"></h4>
+  </div>
+</div>
+
+
+    <!-- Navigation Buttons -->
+    <div class="d-flex justify-content-center mt-5 gap-2">
+      <button id="prevSurah" class="btn btn-outline-prim  btn-nav"> Beginning of Surah</button>
+      <button id="nextSurah" class="btn btn-outline-prim  btn-nav">Next Surah <i class="bi bi-chevron-right"></i></button>
+    </div>
+
+  </div>
+
+<!-- Footer Main -->
+<footer class=" text-dark pt-5 pb-3 border-top">
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="row mb-4 column-gap-3">
+      <!-- Col 1 -->
+      <div class="col-md-6 mb-3 width-footer">
+        <h5 class="fw-bold">Quran.com</h5>
+        <h6>Read, Listen, Search, and Reflect on the Quran</h6>
+        <p class=" para-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+          Sed vitae lacus sed ipsum tempor facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+          Sed vitae lacus sed ipsum tempor facilisis.</p>
+        <p class="para-footer">Aliquam erat volutpat. Integer vel ante sed nisi tincidunt dapibus vel 
+          a nunc. Aliquam erat volutpat. Integer vel ante sed nisi tincidunt dapibus vel 
+          a nunc. Aliquam erat volutpat. Integer vel ante sed nisi tincidunt dapibus vel 
+          a nunc</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-bold">Navigate</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Home</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Quran Radio</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Reciters</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">About Us</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Developers</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Product Updates</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Feedback</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Help</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-bold">Our Projects</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Quran.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Quran For</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Android</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Quran iOS</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">QuranReflect.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Sunnah.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Nuqayah.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Legacy.Quran.com</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Corpus.Quran.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-bold">Popular Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Ayatul Kursi</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Yaseen</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Al Mulk</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Ar-Rahman</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Al Waqi'ah</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Al Kahf</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Row 2 -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <!-- Left -->
+      <div class="mb-2">
+        <a href="#" class="me-3 priva-terms text-decoration-none text-dark">Privacy Policy</a>
+        <a href="#" class="me-3 priva-terms text-decoration-none text-dark">Terms & Conditions</a>
+        <p class="mb-0 copyRight ">©2025 Quran.com — All rights reserved.</p>
+      </div>
+
+      <!-- Right -->
+      <div class="d-flex gap-2">
+        <!-- Mode Dropdown -->
+        <div class="dropdown">
+          <button id="modeBtn" class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" 
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-circle-half me-1"></i> Auto
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="modeBtn">
+            <li><a class="dropdown-item mode-option" href="#" data-mode="Auto"><i class="bi bi-circle-half me-2"></i>Auto</a></li>
+            <li><a class="dropdown-item mode-option" href="#" data-mode="Light"><i class="bi bi-brightness-high me-2"></i>Light</a></li>
+            <li><a class="dropdown-item mode-option" href="#" data-mode="Dark"><i class="bi bi-moon-stars me-2"></i>Dark</a></li>
+          </ul>
+        </div>
+
+        <!-- Language Dropdown -->
+        <!-- Language Dropdown -->
+        <div class="dropdown">
+          <button id="langBtn" class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" 
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-globe me-1"></i> English
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langBtn">
+            <li><a class="dropdown-item lang-option" href="#" data-lang="English"><i class="bi bi-flag me-2"></i>English</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="العربية"><i class="bi bi-flag me-2"></i>العربية</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="اردو"><i class="bi bi-flag me-2"></i>اردو</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="Türkçe"><i class="bi bi-flag me-2"></i>Türkçe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
